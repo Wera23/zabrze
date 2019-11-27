@@ -103,12 +103,26 @@ a {
     align-items: center;
     flex-direction: column;
     width: 30%;
-    border: 1px solid black;
     height: 200px;
 
     &-button {
-        padding: 10px 20px;
-        background-color: gray;
+      padding: 10px 20px;
+      background-color: gray;
+    }
+
+    &-media {
+      display: flex;
+
+      &-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin: 10px;
+      }
     }
   }
 
@@ -134,16 +148,7 @@ a {
     &-content h2 {
       font-size: 16px;
       text-transform: uppercase;
-      // position: relative;
-
-      // &-content h2::after{
-      //     content: '';
-      //     position: absolute;
-      //     top: 20px;
-      //     width: 30px;
-      //     height: 2px;
-      //     background-color: red;
-      // }
+      
     }
   }
 
