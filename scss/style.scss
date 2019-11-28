@@ -9,6 +9,7 @@ body {
 a {
   text-decoration: none;
   color: black;
+  box-sizing: border-box;
 }
 
 .header {
@@ -21,7 +22,6 @@ a {
   background-attachment: fixed;
 
   &__menu {
-    border: 1px solid black;
 
     &-list {
       display: flex;
@@ -48,24 +48,39 @@ a {
   justify-content: center;
   align-items: center;
   padding: 50px;
-  height: 100%;
-  width: 100%;
   color: black;
- 
+
+  &__title{
+    color:#f4572a
+  }
+
+  &__subtitle{
+    font-weight: 200;
+  }
+
+
 
   &__content {
     display: grid;
-    justify-content: center;
-    align-items: flex-start;
-    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr 1fr;    
     grid-template-columns: 1fr 1fr;
-    width: 60vw;
-    //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    padding: 20px;
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 60vw;    
+    padding: 40px;
 
     &-element {
-      margin: 0 20px;
       font-size: 14px;
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+      
+    }
+
+    &-element p{
+      margin-left: 25px;
     }
   }
 }
@@ -74,59 +89,66 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
-  background-color: #f4562a;
+  padding: 90px;
   background-image: url("../assets/img3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
- color: white;
 
-  &__collateral p {
+  &__content {
     text-transform: uppercase;
-    font-size: 18px;
+    color: white;
+    font-size: 24px;
+    width: 60%;
+    line-height: 36px;
   }
-  
- 
 }
 
-
-
 .benefits {
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5em;
 
   &__header {
-    font-size: 20px;
+    font-size: 26px;
     text-transform: uppercase;
+    margin-bottom: 40px;
   }
 
   &__content {
     display: grid;
-    justify-content: center;
-    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
     grid-gap: 20px;
+    padding: 3em;
 
-    width: 80vw;
+    width: 70vw;
 
     &-element {
-      display: flex;
+      flex: 1;
+      height: 100%;
+       display: flex;
       justify-content: flex-start;
+      flex-direction: column;
       align-items: center;
+      padding: 20px;
+      
+
 
       &-img {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         border: 2px solid #f4572a;
         border-radius: 50%;
         margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
       }
     }
 
@@ -137,9 +159,12 @@ a {
     }
 
     &-element p {
-      text-align: left;
+      width: 80%;
       font-weight: 200;
+      text-align: center;
       font-size: 14px;
+      padding-bottom: 20px;;
+      border-bottom: 1px solid #f4562a60;
     }
   }
 }
@@ -149,7 +174,10 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #eeeeec;
-  height: 300px;
+  padding: 5em;
+
+  //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
 
   &__content {
     display: flex;
@@ -157,13 +185,39 @@ a {
     align-items: center;
     flex-direction: column;
     width: 30%;
-    height: 200px;
 
+    
+  
     &-button {
+      margin-top: 40px;
       padding: 10px 20px;
       background-color: #f4572a;
       color: white;
     }
+
+    &-image {
+      background-image: url("../assets/team.jpg");
+      height: 600px;
+      width: 400px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &-list {
+      list-style: none;     
+    }
+
+    &-list h3 {
+      font-size: 16px;
+    }
+
+    &-list li {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+
 
     &-media {
       display: flex;
@@ -182,7 +236,8 @@ a {
   }
 
   &__content h3 {
-    font-size: 20px;
+    font-size: 16px;
+    text-align: left;
   }
 }
 
@@ -209,4 +264,19 @@ a {
   &__contact {
     flex: 1;
   }
+}
+
+.border{
+  border: 1px dashed rgba(255, 166, 0, 0.733);
+  padding: 30px;
+}
+
+.shadow{
+  padding: 10px 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0  0px 3px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}   
+
+.shadow:hover {
+  box-shadow: 0 3px 9px rgba(0,0,0,0.16), 0 6px 9px rgba(0,0,0,0.23);
 }

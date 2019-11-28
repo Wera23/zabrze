@@ -1,5 +1,24 @@
 
+.icon-ok:before { content: '\e800'; } /* '' */
+.icon-emo-wink:before { content: '\e801'; } /* '' */
+.icon-users:before { content: '\e802'; } /* '' */
+.icon-clock:before { content: '\e803'; } /* '' */
+.icon-user-pair:before { content: '\e804'; } /* '' */
+.icon-emo-coffee:before { content: '\e808'; } /* '' */
+.icon-emo-beer:before { content: '\e80b'; } /* '' */
+.icon-tennis:before { content: '\e839'; } /* '' */
+.icon-angle-down:before { content: '\f107'; } /* '' */
+.icon-rocket:before { content: '\f135'; } /* '' */
+.icon-graduation-cap:before { content: '\f19d'; } /* '' */
+.icon-bomb:before { content: '\f1e2'; } /* '' */
+.icon-soccer-ball:before { content: '\f1e3'; } /* '' */
+.icon-slideshare:before { content: '\f1e7'; } /* '' */
+.icon-bicycle:before { content: '\f206'; } /* '' */
+.icon-heartbeat:before { content: '\f21e'; } /* '' */
 .icon-medium:before { content: '\f23a'; } /* '' */
+.icon-american-sign-language-interpreting:before { content: '\f2a3'; } /* '' */
+.icon-sign-language:before { content: '\f2a7'; } /* '' */
 .icon-facebook:before { content: '\f30c'; } /* '' */
 .icon-gplus:before { content: '\f30f'; } /* '' */
 .icon-linkedin:before { content: '\f318'; } /* '' */
+.icon-dribbble:before { content: '\f31b'; } /* '' */
