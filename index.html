@@ -10,28 +10,37 @@
       href="assets/fontello/css/fontello.css"
       type="text/css"
     />
-    <link
+     <link
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+
   </head>
   <body>
-    <div class="header">
-      <div class="header__menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-list-element"><a href="#">O nas</a></li>
-          <li class="header__menu-list-element"><a href="#">Usługi</a></li>
-          <li class="header__menu-list-element"><a href="#">Portfolio</a></li>
-          <li class="header__menu-list-element"><a href="#">Aktualności</a></li>
-          <li class="header__menu-list-element"><a href="#">Kariera</a></li>
-          <li class="header__menu-list-element"><a href="#">Kontakt</a></li>
-        </ul>
-      </div>
+
+      <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-element"><a href="#">O nas</a></li>
+            <li class="menu__list-element"><a href="#">Usługi</a></li>
+            <li class="menu__list-element"><a href="#">Portfolio</a></li>
+            <li class="menu__list-element"><a href="#">Aktualności</a></li>
+            <li class="menu__list-element"><a href="#">Kariera</a></li>
+            <li class="menu__list-element"><a href="#">Kontakt</a></li>
+          </ul>
+        </div>
+
+    <div class="header" id="header">
+      
+
+      <div class="header__title">Kariera</div>
+      
     </div>
 
-    <div class="main">
+    <div class="main" id="main">
       <h2 class="main__title">AKRA Polska to spełnieni ludzie</h2>
       <h3 class="main__subtitle">Spełniony człowiek</h3>
+      <!-- <i class="icon-record-outline"></i> -->
 
       <div class="main__content">
         <div class="main__content-element">
@@ -89,16 +98,19 @@
           </p>
         </div>
       </div>
+
     </div>
 
-    <div class="collateral">
+    <div class="collateral" id="collateral">
       <div class="collateral__content">
         Chcesz się przekonać i być spełnionym człowiekiem? Wybierz wymarzone
         stanowisko i aplikuj do AKRA Polska!
       </div>
+
+      <div><a href="#benefits"><i class="icon-angle-down"></i></a></div>
     </div>
 
-    <div class="benefits">
+    <div class="benefits" id="benefits">
       <h2 class="benefits__header">Benefity</h2>
 
       <div class="benefits__content">
@@ -164,7 +176,7 @@
       </div>
     </div>
 
-    <div class="interactions">
+    <div class="interactions" id="interactions">
       <div class="interactions__content border">
         <div class="interactions__content-list">
           <h3>Dlaczego warto z nami pracować?</h3>
@@ -179,12 +191,12 @@
             BO jesteśmy elastyczni a do każdego Członka Zespołu podchodzimy
             indywidualnie (Ty decydujesz jaką formę współpracy przyjmiemy)
           </li>
-          <li>BO jesteśmy SUPER! (po prostu) i lubimy spędzać ze sobą czas</li>
+          <li><b>BO jesteśmy SUPER!</b> (po prostu) i lubimy spędzać ze sobą czas</li>
           <li>
             BO mamy też to wszystko, co Inni (pakiet sportowy, medyczny, naukę
             języków obcych), ale atmosferę niepowtarzalną !
           </li>
-          <h3>Dołącz do nas</h3>
+          <h3> <i class="icon-rocket"></i>Dołącz do nas</h3>
         </div>
 
         <div class="interactions__content-button shadow">APLIKUJ</div>
@@ -209,23 +221,28 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" id="footer">
       <div class="footer__content">
-        <h2>O nas</h2>
-        <p>
-          AKRA Polska Sp. z o.o. oferuje usługi z zakresu outsourcingu,
-          konsultingu oraz zarządzania projektami. Współpracujemy z AKRA GmbH
-          Hamburg, która działa na europejskim rynku IT od 1999 roku.
-        </p>
-      </div>
-      <div class="footer__content">
-        <h2>Kontakt</h2>
-        <p>
-          AKRA Polska Sp. z o.o., Kalwaryjska 69, 30-504 Kraków Partyzantów 26,
-          11-041 Olsztyn Wolności 345/701, 41-800 Zabrze +48 (12) 426 41 11
-          biuro@akra.net
-        </p>
+          <div class="footer__content-element">
+              <h2>O nas</h2>
+              <p>
+                AKRA Polska Sp. z o.o. oferuje usługi z zakresu outsourcingu,
+                konsultingu oraz zarządzania projektami. Współpracujemy z AKRA GmbH
+                Hamburg, która działa na europejskim rynku IT od 1999 roku.
+              </p>
+            </div>
+            <div class="footer__content-element">
+              <h2>Kontakt</h2>
+              <p>
+                AKRA Polska Sp. z o.o., Kalwaryjska 69, 30-504 Kraków Partyzantów 26,
+                11-041 Olsztyn Wolności 345/701, 41-800 Zabrze +48 (12) 426 41 11
+                biuro@akra.net
+              </p>
+            </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="jquery.scroll-reveal"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

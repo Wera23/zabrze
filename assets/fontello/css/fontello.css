@@ -66,9 +66,12 @@
 
 .icon-ok:before { content: '\e800'; } /* '' */
 .icon-emo-wink:before { content: '\e801'; } /* '' */
-.icon-angle-down:before { content: '\f107'; } /* '' */
+.icon-angle-down:before { content: '\f107'; color: white; font-size: 30px; } /* '' */
 .icon-bicycle:before { content: '\f206'; } /* '' */
 .icon-sign-language:before { content: '\f2a7'; } /* '' */
+
+.icon-down-open-big:before { content: '\e805'; } /* '' */
+.icon-record-outline:before { content: '\e806'; } /* '' */
 
 
 .icon-american-sign-language-interpreting:before { content: '\f2a3'; color: #e2b59b; padding: 10px; font-size: 22px; } /* '' */
@@ -78,7 +81,16 @@
 .icon-emo-beer:before { content: '\e80b'; color: #e2b59b; padding: 10px; font-size: 22px;} /* '' */
 .icon-graduation-cap:before { content: '\f19d'; color: #e2b59b; padding: 10px; font-size: 22px;} /* '' */
 
-.icon-medium:before { content: '\f23a'; color: rgba(0, 0, 0, 0.7); font-size: 20px; } /* '' */
-.icon-facebook:before { content: '\f30c'; color: rgba(0, 0, 0, 0.7); font-size: 20px; } /* '' */
-.icon-gplus:before { content: '\f30f'; color: rgba(0, 0, 0, 0.7); font-size: 20px;} /* '' */
-.icon-linkedin:before { content: '\f318'; color: rgba(0, 0, 0, 0.7); font-size: 20px; } /* '' */
+.icon-medium:before { content: '\f23a'; color: rgba(0, 0, 0, 0.7); font-size: 20px; transition: 1 all; } /* '' */
+.icon-facebook:before { content: '\f30c'; color: rgba(0, 0, 0, 0.7); font-size: 20px; transition: 1 all;} /* '' */
+.icon-gplus:before { content: '\f30f'; color: rgba(0, 0, 0, 0.7); font-size: 20px; transition: 1 all;} /* '' */
+.icon-linkedin:before { content: '\f318'; color: rgba(0, 0, 0, 0.7); font-size: 20px; transition: 1 all;} /* '' */
+
+
+
+.icon-medium:hover:before { content: '\f23a'; color: #f4572a; font-size: 20px; } /* '' */
+.icon-facebook:hover:before{ content: '\f30c'; color: #f4572a; font-size: 20px; } /* '' */
+.icon-gplus:hover:before { content: '\f30f'; color: #f4572a; font-size: 20px;} /* '' */
+.icon-linkedin:hover:before { content: '\f318'; color: #f4572a; font-size: 20px; } /* '' */
+
+

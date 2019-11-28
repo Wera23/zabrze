@@ -11,23 +11,41 @@ a {
   box-sizing: border-box; }
 
 .header {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-image: url("../assets/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; }
-  .header__menu-list {
+  background-position: bottom center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end; }
+  .header__title {
+    text-align: center;
+    padding: 60px 40px;
+    color: white;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif; }
+
+.menu {
+  display: flex;
+  height: 6vh;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white; }
+  .menu__list {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-right: 50px; }
-    .header__menu-list-element {
+    margin-right: 4em; }
+    .menu__list-element {
       list-style: none;
       margin: 15px;
       text-transform: uppercase; }
-    .header__menu-list-element a {
+    .menu__list-element a {
       color: black; }
 
 .main {
@@ -38,7 +56,8 @@ a {
   padding: 50px;
   color: black; }
   .main__title {
-    color: #f4572a; }
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif; }
   .main__subtitle {
     font-weight: 200; }
   .main__content {
@@ -63,7 +82,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 90px;
+  flex-direction: column;
+  padding: 120px;
   background-image: url("../assets/img3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,7 +93,8 @@ a {
     color: white;
     font-size: 24px;
     width: 60%;
-    line-height: 36px; }
+    line-height: 36px;
+    font-family: "Source Sans Pro", sans-serif; }
 
 .benefits {
   display: flex;
@@ -84,7 +105,8 @@ a {
   .benefits__header {
     font-size: 26px;
     text-transform: uppercase;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-family: "Source Sans Pro", sans-serif; }
   .benefits__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -105,7 +127,7 @@ a {
       .benefits__content-element-img {
         width: 70px;
         height: 70px;
-        border: 2px solid #f4572a;
+        border: 1px solid #f4572a;
         border-radius: 50%;
         margin-right: 20px;
         display: flex;
@@ -121,8 +143,7 @@ a {
       font-weight: 200;
       text-align: center;
       font-size: 14px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #f4562a60; }
+      padding-bottom: 20px; }
 
 .interactions {
   display: flex;
@@ -151,12 +172,15 @@ a {
     .interactions__content-list {
       list-style: none; }
     .interactions__content-list h3 {
-      font-size: 16px; }
+      font-size: 18px !important;
+      font-family: "Source Sans Pro", sans-serif;
+      padding: 20px 0; }
     .interactions__content-list li {
-      font-size: 12px;
+      font-size: 14px;
       margin-bottom: 5px; }
     .interactions__content-media {
-      display: flex; }
+      display: flex;
+      margin-top: 20px; }
       .interactions__content-media-icon {
         width: 40px;
         height: 40px;
@@ -165,31 +189,39 @@ a {
         align-items: center;
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.5);
+        transition: 0.5s all;
         margin: 10px; }
+      .interactions__content-media-icon:hover {
+        border: 1px solid  #f4572a;
+        color: #f4572a; }
   .interactions__content h3 {
     font-size: 16px;
     text-align: left; }
 
 .footer {
-  height: 200px;
+  padding: 9em;
   background-color: #0b423d;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 14px;
-  line-height: 24px; }
+  color: white; }
   .footer__content {
-    width: 20%;
-    padding: 40px; }
-    .footer__content-content h2 {
+    width: 50%;
+    display: flex;
+    justify-content: space-between; }
+    .footer__content-element {
+      width: 40%; }
+    .footer__content-element p {
+      font-size: 12px;
+      font-weight: 100;
+      line-height: 30px;
+      padding-top: 20px; }
+    .footer__content-element h2 {
       font-size: 16px;
-      text-transform: uppercase; }
-  .footer__contact {
-    flex: 1; }
+      text-transform: uppercase;
+      font-weight: 200; }
 
 .border {
-  border: 1px dashed rgba(255, 166, 0, 0.733);
   padding: 30px; }
 
 .shadow {
