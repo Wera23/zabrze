@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", serif;
-  line-height: 24px; }
+  line-height: 24px;
+  background-color: #ffffffdc; }
 
 a {
   text-decoration: none;
@@ -41,7 +42,9 @@ a {
     align-items: flex-start;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    width: 70vw; }
+    width: 60vw;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px; }
     .main__content-element {
       margin: 0 20px;
       font-size: 14px; }
@@ -51,14 +54,20 @@ a {
   justify-content: center;
   align-items: center;
   padding: 50px;
-  background-color: #eaebe8; }
+  background-color: #f4562a;
+  position: relative;
+  color: white; }
   .collateral__collateral p {
     text-transform: uppercase;
     font-size: 18px; }
+  .collateral__collateral::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-image: "../assets/img1.jpg"; }
 
 .benefits {
   height: 500px;
-  background-color: #dadada;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,6 +81,7 @@ a {
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    border: 1px solid black;
     grid-gap: 20px;
     width: 80vw; }
     .benefits__content-element {
@@ -81,7 +91,7 @@ a {
       .benefits__content-element-img {
         width: 50px;
         height: 50px;
-        background-color: gray;
+        border: 2px solid #f4572a;
         border-radius: 50%;
         margin-right: 20px; }
     .benefits__content-element h3 {
@@ -97,7 +107,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f8ee;
+  background-color: #eeeeec;
   height: 300px; }
   .interactions__content {
     display: flex;
@@ -108,7 +118,8 @@ a {
     height: 200px; }
     .interactions__content-button {
       padding: 10px 20px;
-      background-color: gray; }
+      background-color: #f4572a;
+      color: white; }
     .interactions__content-media {
       display: flex; }
       .interactions__content-media-icon {
@@ -125,7 +136,7 @@ a {
 
 .footer {
   height: 200px;
-  background-color: gray;
+  background-color: #0b423d;
   display: flex;
   justify-content: center;
   align-items: center;
