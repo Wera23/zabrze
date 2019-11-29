@@ -72,7 +72,7 @@ a {
       width: 100%;
       height: 2px;
       bottom: 0;
-      left: 0;
+      left:0;
       background-color: #f4572a;
       visibility: hidden;
       -webkit-transform: scaleX(0);
@@ -152,13 +152,8 @@ a {
       justify-content: flex-start;
       align-items: center;
       transition: all 0.3s ease-in-out;
-      border-bottom: 1px solid rgba(255, 255, 255, 0);
     }
 
-    &-element:hover {
-      border-bottom: 1px solid orange;
-      transition: all 0.3s ease-in-out;
-    }
 
     &-element p {
       margin-left: 25px;
@@ -254,6 +249,83 @@ a {
       padding-bottom: 20px;
     }
   }
+}
+
+.work-header{
+  text-align: center;
+  font-size: 18px;
+}
+
+.work {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  &__element {
+    height: 250px;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    color: white;
+
+    
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+
+      
+      &-name a {
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
+        color: white;
+      }
+
+      &-name a:hover {
+        color: white;
+      }
+  
+      &-name a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+  
+      &-name a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+
+
+
+
+    }
+
+    &-content span {
+      font-size: 13px;
+    }
+  }
+}
+
+.work-subtitle{
+  font-size: 12px;
+  text-align: center;
+  background-color: #eeeeec;
 }
 
 .interactions {
@@ -378,4 +450,58 @@ a {
       color: #f4572a;
     }
   }
+}
+
+
+//diff//
+
+
+.one {
+  background-color: #055b5a;
+}
+
+.one:hover{
+  background-color: #055b5adc;
+}
+
+.two {
+  background-color: #88af9a;
+}
+
+.two:hover {
+  background-color: #88af9ad7;
+}
+
+.three {
+  background-color: #ce6957;
+}
+
+.three:hover {
+  background-color: #ce6957e1;
+}
+
+.four {
+  background-color: #eeb98e;
+
+}
+
+.four:hover {
+  background-color: #eeb98ece;
+
+}
+
+.five{
+  background-color: #dc942b;
+}
+
+.five:hover{
+  background-color: #dc952be0;
+}
+
+.six {
+  background-color: #f4572a;
+}
+
+.six:hover {
+  background-color: #f4562ad8;
 }

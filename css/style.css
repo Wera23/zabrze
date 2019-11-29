@@ -119,10 +119,6 @@ a {
       width: 100%;
       justify-content: flex-start;
       align-items: center;
-      transition: all 0.3s ease-in-out;
-      border-bottom: 1px solid rgba(255, 255, 255, 0); }
-    .main__content-element:hover {
-      border-bottom: 1px solid orange;
       transition: all 0.3s ease-in-out; }
     .main__content-element p {
       margin-left: 25px; }
@@ -197,6 +193,59 @@ a {
       text-align: center;
       font-size: 14px;
       padding-bottom: 20px; }
+
+.work-header {
+  text-align: center;
+  font-size: 18px; }
+
+.work {
+  display: flex;
+  justify-content: space-between;
+  align-content: center; }
+  .work__element {
+    height: 250px;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    color: white; }
+    .work__element-content {
+      display: flex;
+      flex-direction: column; }
+      .work__element-content-name a {
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
+        color: white; }
+      .work__element-content-name a:hover {
+        color: white; }
+      .work__element-content-name a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s; }
+      .work__element-content-name a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1); }
+    .work__element-content span {
+      font-size: 13px; }
+
+.work-subtitle {
+  font-size: 12px;
+  text-align: center;
+  background-color: #eeeeec; }
 
 .interactions {
   display: flex;
@@ -283,3 +332,39 @@ a {
       font-weight: 200;
       border-bottom: 1px solid #f4572a;
       color: #f4572a; }
+
+.one {
+  background-color: #055b5a; }
+
+.one:hover {
+  background-color: #055b5adc; }
+
+.two {
+  background-color: #88af9a; }
+
+.two:hover {
+  background-color: #88af9ad7; }
+
+.three {
+  background-color: #ce6957; }
+
+.three:hover {
+  background-color: #ce6957e1; }
+
+.four {
+  background-color: #eeb98e; }
+
+.four:hover {
+  background-color: #eeb98ece; }
+
+.five {
+  background-color: #dc942b; }
+
+.five:hover {
+  background-color: #dc952be0; }
+
+.six {
+  background-color: #f4572a; }
+
+.six:hover {
+  background-color: #f4562ad8; }
