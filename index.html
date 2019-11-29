@@ -18,6 +18,12 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -34,12 +40,15 @@
 
     <div class="header" id="header">
       <div class="header__title" data-aos="fade-right">Kariera</div>
+    
+      <div class="header__icon">
+          <a href="#main"><i class="icon-angle-down"></i></a>
+      </div>
     </div>
 
     <div class="main" id="main">
       <h2 class="main__title">AKRA Polska to spełnieni ludzie</h2>
       <h3 class="main__subtitle">Spełniony człowiek</h3>
-      <!-- <i class="icon-record-outline"></i> -->
 
       <div class="main__content">
         <div class="main__content-element" data-aos="zoom-in">
@@ -105,9 +114,11 @@
         stanowisko i aplikuj do AKRA Polska!
       </div>
 
-      <div>
+      <div class="collateral__icon">
         <a href="#benefits"><i class="icon-angle-down"></i></a>
       </div>
+
+     
     </div>
 
     <div class="benefits" id="benefits">
@@ -313,6 +324,7 @@
     <script type="text/javascript" src="jquery.scroll-reveal"></script>
     <script type="text/javascript" src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
     <script>
       AOS.init();

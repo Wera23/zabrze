@@ -47,7 +47,11 @@
       display: flex;
       width: 100%;
       justify-content: flex-start;
-      align-items: center;
-      transition: all 0.3s ease-in-out; }
+      align-items: center; }
     .main__content-element p {
-      margin-left: 25px; }
+      margin-left: 25px;
+      transition: all 0.3s ease-in-out; }
+    .main__content-element p:hover {
+      transform: scale(1.05); }
+    .main__content-element p:hover .icon-slideshare {
+      border: 1px solid red; }

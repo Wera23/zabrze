@@ -3,11 +3,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 120px;
+  padding: 9em;
   background-image: url("../assets/img3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 
   &__content {
     text-transform: uppercase;
@@ -17,4 +18,31 @@
     line-height: 36px;
     font-family: "Source Sans Pro", sans-serif;
   }
+
+  &__icon{
+    border: 1px solid rgba(255, 255, 255, 0.726);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 33px;
+    left: 49%;
+    transition: all 0.3s ease-in-out;
+  }
+ 
+  &__icon:hover{
+    bottom: 25px;
+  }
+}
+
+.collateral::before{
+  background-color: #021a1965;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
