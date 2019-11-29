@@ -1,0 +1,52 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em; }
+  .benefits__header {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-family: "Source Sans Pro", sans-serif; }
+  .benefits__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    padding: 3em;
+    width: 70vw; }
+    .benefits__content-element {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px; }
+      .benefits__content-element-img {
+        width: 75px;
+        height: 75px;
+        border: 1px solid #f4572a;
+        border-radius: 50%;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        transition: all 0.4s ease-out; }
+      .benefits__content-element-img:hover {
+        border: 1px solid rgba(255, 255, 255, 0);
+        background-color: #f8e1db; }
+    .benefits__content-element h3 {
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-bottom: 20px; }
+    .benefits__content-element p {
+      width: 80%;
+      font-weight: 200;
+      text-align: center;
+      font-size: 14px;
+      padding-bottom: 20px; }

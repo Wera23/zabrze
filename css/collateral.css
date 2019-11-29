@@ -1,0 +1,17 @@
+.collateral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 120px;
+  background-image: url("../assets/img3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .collateral__content {
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    width: 60%;
+    line-height: 36px;
+    font-family: "Source Sans Pro", sans-serif; }

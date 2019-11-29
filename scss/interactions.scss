@@ -1,0 +1,89 @@
+.interactions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeec;
+  padding: 5em;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+
+    &-button {
+      margin-top: 40px;
+      padding: 10px 20px;
+      background-color: #f4572a;
+      color: white;
+      transition: all 0.4s ease-in-out;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 0px 3px rgba(0, 0, 0, 0.23);
+    }
+
+    &-button:hover {
+      background: linear-gradient(
+        180deg,
+        rgba(244, 87, 42, 1) 0%,
+        rgba(255, 169, 19, 1) 100%
+      );
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.16), 0 6px 9px rgba(0, 0, 0, 0.23);
+    }
+
+    &-image {
+      background-image: url("../assets/team.jpg");
+      height: 600px;
+      width: 400px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &-list {
+      list-style: none;
+
+      &-join {
+        font-weight: bold;
+        padding-top: 20px;
+      }
+    }
+
+    &-list h3 {
+      font-size: 18px;
+      font-family: "Source Sans Pro", sans-serif;
+      padding: 20px 0;
+    }
+
+    &-list li {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    &-media {
+      display: flex;
+      margin-top: 20px;
+
+      &-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        transition: 0.5s all;
+        margin: 10px;
+      }
+
+      &-icon:hover {
+        border: 1px solid #f4572a;
+        color: #f4572a;
+      }
+    }
+  }
+
+  &__content h3 {
+    font-size: 16px;
+    text-align: left;
+  }
+}
