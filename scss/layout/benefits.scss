@@ -7,9 +7,9 @@
 
   &__header {
     font-size: 26px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
     font-family: $fontSans;
+    text-transform: uppercase;
+    margin-bottom: 40px;    
   }
 
   &__content {
@@ -20,7 +20,6 @@
     align-items: center;
     grid-gap: 20px;
     padding: 3em;
-
     width: 70vw;
 
     &-element {
@@ -36,11 +35,11 @@
         width: 75px;
         height: 75px;
         border: 1px solid $orange;
-        border-radius: 50%;
         margin-right: 20px;
-        @include centralizeRow;
         margin-bottom: 20px;
-        transition: all 0.4s ease-out;
+        @include borderRadius;
+        @include centralizeRow;        
+        @include transition;
       }
 
       &-img:hover {
@@ -61,7 +60,7 @@
       text-align: center;
       font-size: 14px;
       padding-bottom: 20px;
-      transition: all 0.4s ease-out;
+      @include transition;
     }
 
     &-element p:hover {

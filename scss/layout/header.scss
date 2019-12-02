@@ -14,23 +14,23 @@
   align-items: flex-end;
 
   &__title {
-    text-align: center;
-    padding: 60px 42px;
-    color: white;
+    color: $white;
     font-size: 55px;
     text-transform: uppercase;
     font-family: $fontSans;
+    text-align: center;
+    padding: 60px 42px;
   }
 
   &__icon {
     @include centralizeRow;
-    border: 1px solid rgba(255, 255, 255, 0.562);
-    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.55);
     width: 50px;
     height: 50px;
     position: absolute;
     bottom: 58px;
     left: 49%;
+    @include borderRadius;
     @include transition;
   }
 
@@ -46,10 +46,10 @@
 
 .menu {
   display: flex;
-  height: 6vh;
   justify-content: flex-end;
   align-items: center;
-  background-color: white;
+  height: 6vh;
+  background-color: $white;
   position: sticky;
   z-index: 333;
   top: 0;
@@ -67,35 +67,29 @@
     }
 
     &-element a {
-      color: black;
+      color: $black;
       position: relative;
       text-decoration: none;
       height: 16px;
     }
 
     &-element a:hover {
-      color: black;
+      color: $black;
     }
 
-    &-element a:before {
-      content: "";
-      position: absolute;
-      width: 100%;
+    &-element a:before {      
       height: 2px;
       bottom: 0;
       left: 0;
       background-color: $orange;
       visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
+      @include beforeWithoutHeight;
+      @include scaleX0;
+      @include transition;
     }
 
     &-element a:hover:before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
+      @include scaleX1;
     }
   }
 }

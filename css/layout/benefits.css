@@ -6,9 +6,9 @@
   padding: 5em; }
   .benefits__header {
     font-size: 26px;
+    font-family: "Source Sans Pro", sans-serif;
     text-transform: uppercase;
-    margin-bottom: 40px;
-    font-family: "Source Sans Pro", sans-serif; }
+    margin-bottom: 40px; }
   .benefits__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -30,13 +30,13 @@
         width: 75px;
         height: 75px;
         border: 1px solid #f4572a;
-        border-radius: 50%;
         margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 20px;
-        transition: all 0.4s ease-out; }
+        transition: all 0.3s ease-in-out; }
       .benefits__content-element-img:hover {
         border: 1px solid rgba(255, 255, 255, 0);
         background-color: #f8e1db; }
@@ -50,6 +50,6 @@
       text-align: center;
       font-size: 14px;
       padding-bottom: 20px;
-      transition: all 0.4s ease-out; }
+      transition: all 0.3s ease-in-out; }
     .benefits__content-element p:hover {
       transform: scale(1.05); }

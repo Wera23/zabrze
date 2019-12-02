@@ -12,11 +12,17 @@
 }
 
 @mixin before {
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   position: absolute;
-  width: 100%; 
+  width: 100%;
+}
+
+@mixin beforeWithoutHeight {
+  content: "";
+  position: absolute;
+  width: 100%;
 }
 
 @mixin img-background {
@@ -26,4 +32,19 @@
 
 @mixin transition {
   transition: all 0.3s ease-in-out;
+}
+
+@mixin scaleX0 {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+@mixin scaleX1 {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+@mixin borderRadius {
+  border-radius: 50%;
 }
