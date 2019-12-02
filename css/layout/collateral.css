@@ -1,0 +1,40 @@
+.collateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9em;
+  background-image: url("../assets/img3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  .collateral__content {
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    width: 60%;
+    line-height: 36px;
+    font-family: "Source Sans Pro", sans-serif; }
+  .collateral__icon {
+    border: 1px solid rgba(255, 255, 255, 0.726);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 33px;
+    left: 49%;
+    transition: all 0.3s ease-in-out; }
+  .collateral__icon:hover {
+    bottom: 25px; }
+
+.collateral::before {
+  background-color: #021a1965;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%; }

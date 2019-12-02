@@ -1,10 +1,13 @@
-@import "benefits.scss";
-@import "collateral.scss";
-@import "footer.scss";
-@import "header.scss";
-@import "interactions.scss";
-@import "main.scss";
-@import "work.scss";
+@import "./helpers/variables.scss";
+@import "./helpers/mixins";
+
+@import "./layout/benefits.scss";
+@import "./layout/collateral.scss";
+@import "./layout/footer.scss";
+@import "./layout/header.scss";
+@import "./layout/interactions.scss";
+@import "./layout/main.scss";
+@import "./layout/work.scss";
 
 body {
   margin: 0;

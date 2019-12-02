@@ -1,7 +1,8 @@
+@import '../helpers/mixins';
+@import '../helpers/variables';
+
 .interactions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centralizeRow;
   background-color: #eeeeec;
   padding: 5em;
 
@@ -15,7 +16,7 @@
     &-button {
       margin-top: 40px;
       padding: 10px 20px;
-      background-color: #f4572a;
+      background-color: $orange;
       color: white;
       transition: all 0.4s ease-in-out;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 0px 3px rgba(0, 0, 0, 0.23);
@@ -34,8 +35,7 @@
       background-image: url("../assets/team.jpg");
       height: 600px;
       width: 400px;
-      background-repeat: no-repeat;
-      background-size: cover;
+      @include img-background;
       background-position: center center;
     }
 
@@ -50,7 +50,7 @@
 
     &-list h3 {
       font-size: 18px;
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: $fontSans;
       padding: 20px 0;
     }
 
@@ -76,8 +76,8 @@
       }
 
       &-icon:hover {
-        border: 1px solid #f4572a;
-        color: #f4572a;
+        border: 1px solid $orange;
+        color: $orange;
       }
     }
   }

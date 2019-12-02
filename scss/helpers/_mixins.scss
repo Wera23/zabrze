@@ -1,0 +1,29 @@
+@mixin centralizeCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centralizeRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin before {
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%; 
+}
+
+@mixin img-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin transition {
+  transition: all 0.3s ease-in-out;
+}

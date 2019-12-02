@@ -1,14 +1,14 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include centralizeCol;
   padding: 50px;
   color: black;
 
   &__title {
     text-transform: uppercase;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $fontSans;
   }
 
   &__subtitle {
@@ -30,12 +30,11 @@
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color: #f4572a;
+    background-color: $orange;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    @include transition;
   }
 
   &__subtitle:hover:before {
@@ -60,20 +59,16 @@
       width: 100%;
       justify-content: flex-start;
       align-items: center;
-      
     }
-    
 
     &-element p {
-      margin-left: 25px;transition: all 0.3s ease-in-out;
+      margin-left: 25px;
+      @include transition;
     }
 
     &-element p:hover {
       transform: scale(1.05);
     }
 
-    &-element p:hover .icon-slideshare{
-      border: 1px solid red;
-    }
   }
 }

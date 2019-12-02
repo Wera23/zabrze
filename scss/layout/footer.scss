@@ -1,9 +1,10 @@
+@import '../helpers/mixins';
+@import '../helpers/variables';
+
 .footer {
+  @include centralizeCol;
   padding: 9em;
   background-color: #0b423d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
 
   &__content {
@@ -26,8 +27,8 @@
       font-size: 16px;
       text-transform: uppercase;
       font-weight: 200;
-      border-bottom: 1px solid #f4572a;
-      color: #f4572a;
+      border-bottom: 1px solid $orange;
+      color: $orange;
     }
   }
 }
