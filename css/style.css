@@ -111,7 +111,6 @@
       width: 40%; }
     .footer__content-element p {
       font-size: 12px;
-      font-weight: 100;
       line-height: 30px;
       padding-top: 20px; }
     .footer__content-element h2 {
@@ -384,7 +383,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000;
   box-sizing: border-box; }
 
 .phone {
